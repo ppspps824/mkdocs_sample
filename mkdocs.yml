@@ -1,0 +1,95 @@
+site_name: FastGourmet
+
+
+theme:  
+    name: material
+    logo: assets/logo.jpg
+    palette:
+      primary: white
+    language: 'ja'
+    font:
+      text: "Meiryo UI"
+      code: "Consolas"
+    features:
+      - navigation.instant
+      - navigation.tabs
+features:
+  tabs: true
+
+nav:
+    - Welcome: index.md
+    - About: about.md
+    - Featurs: features.md
+    - Contact: contact.md
+    
+extra:
+  generator: false
+extra_css:
+  - style/style.css
+
+
+# [拡張機能]
+markdown_extensions:
+  # 目次
+  - toc:
+      # 自動生成を有効にする
+      permalink: true
+      # 目次の上に表示する文言
+      title: 見出し
+      # 見出しにする深さ
+      toc_depth: 3
+  # コードハイライトの設定（デフォルトのcodehiliteを使わずに拡張機能を使用）
+  - pymdownx.highlight:
+      # (auto_titleなどの他の機能を有効にするためtrue)
+      use_pygments: true
+      # タイトルが設定されていないと自動的に言語名を表示する
+      auto_title: true
+      # 行番号を表示する
+      linenums: true
+      # 行を選択できアンカーリンクを生成可能にする
+      anchor_linenums: true
+  # コードハイライトの設定(インラインブロック版)
+  - pymdownx.inlinehilite
+  # アラート修飾(Note修飾)を有効化
+  - admonition
+  # コンテンツの折りたたみを有効化
+  - pymdownx.details
+  # 打ち消し線の追加
+  - pymdownx.tilde
+  # 下付き文字と上付き文字の追加（tilde拡張も必要）
+  - pymdownx.caret
+  # テキストの強調表示が可能になる（tilde,caret拡張も必要）
+  - pymdownx.mark
+  # ドキュメント内の追加、削除、または更新されたセクションを強調表示
+  - pymdownx.critic
+  # キーボードアイコンの追加
+  - pymdownx.keys
+  # 略語
+  - abbr
+  # 参照
+  - attr_list
+  # HTML内にMarkdownを記述できる
+  - md_in_html
+  # 注釈の追加
+  - footnotes
+  # 定義リスト
+  - def_list
+  # タスクのチェックリストを追加
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # グリッド表示の有効化
+  - tables
+  # 任意のファイルのコンテンツを他のドキュメントやソースファイルを含むドキュメントに埋め込む機能
+  - pymdownx.snippets
+  # コンテンツタブ表示の有効化
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.superfences:
+
+  - pymdownx.magiclink
+
+plugins:
+  - glightbox
+
+# Copyright
+copyright: 'Copyright © 2022 - 2022 - Fast Gourmet, Inc.'
