@@ -17,15 +17,12 @@ features:
   tabs: true
 
 nav:
-    - Welcome: index.md
     - About: about.md
     - Featurs: features.md
     - Contact: contact.md
     
 extra:
   generator: false
-extra_css:
-  - style/style.css
 
 
 # [拡張機能]
