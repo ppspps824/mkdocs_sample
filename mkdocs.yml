@@ -17,7 +17,7 @@ features:
   tabs: true
 
 nav:
-    - About: about.md
+    - About: index.md
     - Featurs: features.md
     - Contact: contact.md
     
